@@ -1,0 +1,155 @@
+.main{
+    position: relative;
+    top: -190px;
+    /* background-color: white; */
+     border: 5px solid red; 
+    width: 270px;
+    height: 270px;
+    /* border-radius: 1em; */
+    margin: -150px auto;
+    padding-bottom: 1rem;
+    padding-left: 0.5em;
+    }
+.result{
+    height: 40px;
+    width: 99.5%;
+    /* margin-top: em; */
+    background-color: black;
+    margin-left: -8px;
+    border: 2px solid red;
+    color: white;
+}
+.clearBtn{
+    height: 25px;
+    margin-top: 10px;
+ width: 104%;
+ /* border-radius:1rem ; */
+ height: 30px;
+ font-weight: bold;
+ margin-left: -9px;
+ background-color: black;
+ color: red;
+ border: 2px solid red;
+}
+.btn{
+    color: brown;
+    width: 45px;
+    height: 25px;
+    background-color: black;
+   margin: 8px;
+   margin-top: 15px;
+   border: 2px solid red;
+}
+.halfBtn{
+  border: 2px solid red;
+    height: 30px;
+    background-color: black;
+    width: 8rem;
+    margin-top: 15px;  
+    margin-left: -0.5px;
+    color: brown;   
+}
+body {
+    background-color: #000;
+    margin:0;
+    padding: 0;
+  }
+  section {
+    height: 100vh;
+    background: #000;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  section::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to right, #f00, #f00, #808080,  #800000, #bdb76b, 	#ffa07a);
+    mix-blend-mode: color;
+    pointer-events: none;
+  }
+  video {
+    margin-top: -200px;
+    object-fit: cover;
+  }
+  h1 {
+    margin-top: -200px;
+    padding: 0;
+    position: absolute;
+    top: 50%;
+    transform: translatey(-50%);
+    width: 100%;
+    text-align: center;
+    color: #fff;
+    font-size: 5em;
+    font-family:  sans-serif;
+    text-transform: uppercase;
+    font-family: "Source Code Pro";
+    font-weight: 900;
+  }
+  h1 span {
+    display: inline-block;
+    animation: animate 1s linear forwards;
+  }
+  @keyframes animate {
+    0% {
+      opacity: 0;
+      transform: rotateY(90deg);
+      filter: blur(10px);
+    }
+    100% {
+      opacity: 1;
+      transform: rotateY(0deg);
+      filter: blur(0);
+    }
+  }
+  h1 span:nth-child(1) {
+    color: #186aa0;
+    opacity: 0;
+    animation-delay: 2s;
+  }
+  h1 span:nth-child(2) {
+    opacity: 0;
+    animation-delay: 2.5s;
+  }
+  h1 span:nth-child(3) {
+    opacity: 0;
+    animation-delay: 2.75s;
+  }
+  h1 span:nth-child(4) {
+    color: #186aa0;
+    opacity: 0;
+    animation-delay: 3s;
+  }
+  h1 span:nth-child(5) {
+    opacity: 0;
+    animation-delay: 3.25s;
+  }
+  h1 span:nth-child(6) {
+    opacity: 0;
+    animation-delay: 3.5s;
+  }
+  h1 span:nth-child(7) {
+    opacity: 0;
+    animation-delay: 3.5s;
+  }
+  @media screen and(max-width:900px) {
+    .main{
+      position: relative;
+      top: -190px;
+      /* background-color: white; */
+       border: 5px solid red; 
+      width: 20px;
+      height: 270px;
+      /* border-radius: 1em; */
+      margin: -150px auto;
+      padding-bottom: 1rem;
+      padding-left: 0.5em;
+      }
+    }
+  }
